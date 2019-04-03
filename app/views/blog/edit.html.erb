@@ -1,0 +1,16 @@
+<%= form_for @blog, url: blog_path(@blog), method: :put do |f| %>
+    <div>
+        <%= f.label :title, "Titulo" %>
+        <%= f.text_field :title %>
+    </div>
+    <div>
+        <%= f.label :title, "Contenido" %>
+        <%= f.text_area :content %>
+    </div>
+    <div>
+        <%= f.submit  %>
+    </div>
+
+
+    
+<% end %> 
